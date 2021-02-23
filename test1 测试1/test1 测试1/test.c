@@ -2,11 +2,11 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <string.h>
-//´òÓ¡±¶Êı
+//æ‰“å°å€æ•°
 //int main()
 //{
-//	int x = 0;//±¶ÊıÄ¿±ê
-//	int y = 0;//±¶Êı·¶Î§
+//	int x = 0;//å€æ•°ç›®æ ‡
+//	int y = 0;//å€æ•°èŒƒå›´
 //	int i = 1;
 //	scanf("%d/n", &x);
 //	scanf("%d/n", &y);
@@ -17,11 +17,11 @@
 //	};
 //	return 0;
 //}
-//´òÓ¡Å¼Êı
+//æ‰“å°å¶æ•°
 //int main()
 //{
-//	int n = 1;//Å¼ÊıÄ¿±ê
-//	int i = 0;//Å¼Êı·¶Î§
+//	int n = 1;//å¶æ•°ç›®æ ‡
+//	int i = 0;//å¶æ•°èŒƒå›´
 //	scanf("%d/n", &i);
 //	while (n <= i)
 //	{
@@ -39,21 +39,34 @@
 //
 //	return 0;
 //}
-//´òÓ¡ËØÊı
+//æ‰“å°ç´ æ•°
+//#include <math.h>;
 //int main()
 //{
-//	long x = 0;
-//	long y =2;//±»³ıÊı
-//	long z = 0;
-//	scanf("%d", &x);//¿ªÊ¼ÕûÊı
-//	scanf("%d", &z);//½áÊøÕûÊı
-//	
-//	return 0;
+//    int i = 0;
+//    int count = 0;
+//   for (i = 101; i <= 200; i += 2)
+//    {
+//        int j = 0;
+//        for (j = 2; j <= sqrt(i); j++)
+//        {
+//            if (i % j == 0)
+//                break;
+//        }
+//        if (j > sqrt(i))
+//        {
+//            count++;
+//            printf("%d ", i);
+//        }
+//    }
+//    printf("\ncount=%d", count);
+//    return 0;
+
 //}
-//¼ÆËã½×³Ë
+//è®¡ç®—é˜¶ä¹˜
 //int main()
 //{
-//	long x=0;//Ä¿±ê
+//	long x=0;//ç›®æ ‡
 //	int y=0;
 //	int ret = 1;
 //	scanf("%d/n", &x);
@@ -64,7 +77,7 @@
 //	printf("%d\n", ret);
 //	return 0;
 //}
-//¼ÆËã½×³ËÏà¼Ó
+//è®¡ç®—é˜¶ä¹˜ç›¸åŠ 
 //int main()
 //{
 //	long x = 1;
@@ -72,7 +85,7 @@
 //	int ret = 1;
 //	int sum = 0;
 //	int n = 0;
-//	scanf("%d/n", &n);//½×³Ë·¶Î§
+//	scanf("%d/n", &n);//é˜¶ä¹˜èŒƒå›´
 //	while(x<=n)
 //	{
 //		ret = 1;
@@ -86,7 +99,7 @@
 //	printf("%d", sum);
 //	return 0;
 //}
-//¶ş·Ö·¨
+//äºŒåˆ†æ³•
 int main()
 {
 	int left = 0;
@@ -94,7 +107,7 @@ int main()
 	int k = 0;
 	int n = 0;
 	int z = 0;
-	char arr[] = { 1,2,3,4,5,6,8,9 };//²éÕÒ·¶Î§
+	char arr[] = { 1,2,3,4,5,6,8,9 };//æŸ¥æ‰¾èŒƒå›´
 	scanf("%d", &k);
 	n = sizeof(arr) / sizeof(arr[0]);
 	right = n - 1;
@@ -111,12 +124,12 @@ int main()
 		}
 		else
 		{
-			printf("ÕÒµ½ÁË,ÏÂ±êÊÇ%d", z);
+			printf("æ‰¾åˆ°äº†,ä¸‹æ ‡æ˜¯%d", z);
 			break;
 		}
 
 	}
 	if (left > right)
-		printf("ÕÒ²»µ½");
+		printf("æ‰¾ä¸åˆ°");
 	return 0;
 }

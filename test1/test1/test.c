@@ -1,5 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
 
-#define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <string.h>
 //打印倍数
@@ -40,16 +40,54 @@
 //	return 0;
 //}
 //打印素数
+//方法1
 //int main()
 //{
-//	long x = 0;
-//	long y =2;//被除数
-//	long z = 0;
-//	scanf("%d", &x);//开始整数
-//	scanf("%d", &z);//结束整数
-//	
-//	return 0;
+//    int i = 0;
+//    int j = 0;
+//    int count = 0;
+//    for (i = 100; i <= 200; i++)
+//    {
+//        for (j = 2; j <= i - 1; j++)
+//        {
+//            if (i % j == 0)
+//                break;
+//        }
+//        if (j == i)
+//        {
+//            count++;
+//            printf("%d ", i);
+//        }
+//    }
+//    printf("\ncount=%d", count);
+//    return 0;
 //}
+//方法2
+//#include <math.h>;
+//int main()
+//{
+//    int i = 0;
+//    int count = 0;
+//    for (i = 101; i <= 200; i += 2)
+//    {
+//        int j = 0;
+//        for (j = 2; j <= sqrt(i); j++)
+//        {
+//            if (i % j == 0)
+//                break;
+//        }
+//        if (j > sqrt(i))
+//        {
+//            count++;
+//            printf("%d ", i);
+//        }
+//    }
+//    printf("\ncount=%d", count);
+//    system("pause");
+//    return 0;
+//
+//}
+
 //计算阶乘
 //int main()
 //{
@@ -80,7 +118,7 @@
 //			{
 //				ret = ret * y;
 //			};
-//		sum = sum + ret;
+//		sum  += ret;
 //		x++;
 //	}
 //	printf("%d", sum);

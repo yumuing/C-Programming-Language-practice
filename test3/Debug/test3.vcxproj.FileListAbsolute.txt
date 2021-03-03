@@ -1,0 +1,2 @@
+D:\编程\代码\c语言\test3\Debug\test3.exe
+D:\编程\代码\c语言\test3\Debug\test3.pdb
